@@ -1,0 +1,47 @@
+{
+  "name": "pi-audible-proximity",
+  "homepage": "https://www.reelyactive.com",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
+  "description": "Programatically play audio files on a Raspberry Pi based on its proximity to Bluetooth beacons.  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "Raspberry Pi",
+    "Bluetooth beacons",
+    "audio"
+  ],
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "bin": "./bin/pi-audible-proximity",
+  "main": "./lib/piaudibleproximity.js",
+  "scripts": {
+    "start": "node bin/pi-audible-proximity"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/pi-audible-proximity.git"
+  },
+  "dependencies": {
+    "advlib": "^1.1.3",
+    "advlib-ble": "^1.1.1",
+    "advlib-ble-manufacturers": "^1.2.5",
+    "advlib-ble-services": "^1.2.1",
+    "advlib-interoperable": "^1.1.0",
+    "barnowl": "^1.1.2",
+    "barnowl-hci": "^0.3.1",
+    "raddec": ">=0.2.8"
+  },
+  "devDependencies": {
+  },
+  "bugs": {
+    "url": "https://github.com/reelyactive/pi-audible-proximity/issues"
+  },
+  "contributors": [
+    { "name": "Jeffrey Dungen" }
+  ],
+  "license": "MIT"
+}
