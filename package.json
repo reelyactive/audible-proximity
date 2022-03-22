@@ -33,6 +33,7 @@
     "advlib-interoperable": "^1.2.0",
     "barnowl": "^1.1.2",
     "barnowl-hci": "^0.3.1",
+    "play-sound": "^1.1.5",
     "raddec": ">=0.2.8"
   },
   "devDependencies": {
