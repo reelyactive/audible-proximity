@@ -30,7 +30,7 @@
     "advlib-ble": "^1.1.1",
     "advlib-ble-manufacturers": "^1.2.5",
     "advlib-ble-services": "^1.2.1",
-    "advlib-interoperable": "^1.1.0",
+    "advlib-interoperable": "^1.2.0",
     "barnowl": "^1.1.2",
     "barnowl-hci": "^0.3.1",
     "raddec": ">=0.2.8"
