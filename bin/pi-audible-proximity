@@ -1,5 +1,0 @@
-#!/usr/bin/env node
-
-const PiAudibleProximity = require('../lib/piaudibleproximity.js');
-
-let pap = new PiAudibleProximity();

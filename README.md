@@ -1,7 +1,7 @@
-pi-audible-proximity
-====================
+audible-proximity
+=================
 
-Programatically play audio files on a Raspberry Pi based on its proximity to Bluetooth beacons.
+Programatically play audio files on a portable computer, like the Raspberry Pi, based on its proximity to Bluetooth beacons.
 
 
 License
