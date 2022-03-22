@@ -4,6 +4,24 @@ audible-proximity
 Programatically play audio files on a portable computer, like the Raspberry Pi, based on its proximity to Bluetooth beacons.
 
 
+Installation
+------------
+
+Clone this repository, and from its root folder, run `npm install` to install all dependencies.
+
+
+Quick Start
+-----------
+
+To start __audible-proximity__ run `npm start` again from the root folder.
+
+
+Prerequisites
+-------------
+
+A supported media player is required.  On the Raspberry Pi, run `sudo apt install mpg123` to install a lightweight media player.
+
+
 License
 -------
 
