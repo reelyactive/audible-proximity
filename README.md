@@ -15,11 +15,21 @@ Quick Start
 
 To start __audible-proximity__ run `npm start` again from the root folder.
 
+If an EPERM error is encountered, follow the instructions for [assigning privileges](https://github.com/reelyactive/barnowl-hci/#assigning-privileges) in barnowl-hci.
+
 
 Prerequisites
 -------------
 
-A supported media player is required.  On the Raspberry Pi, run `sudo apt install mpg123` to install a lightweight media player.
+__audible-proximity__ requires the [mpg123](https://www.mpg123.de/) lightweight media player, which can easily be installed on Ubuntu/Debian Linux distributions (such as that on a Raspberry Pi) with the command `sudo apt install mpg123`
+
+
+Audio Files
+-----------
+
+By default, audio files are expected to be found in the data/audio subfolder of this repository and have the form __xxxxxxx.mp3__ where each 'x' is a hexadecimal character (0-9 or a-f), for example 0123abc.mp3.
+
+A Bluetooth beacon transmitting an [InteroperaBLE Identifier](https://reelyactive.github.io/interoperable-identifier/) with the entity UUID __496f4944-434f-4445-b73e-2e2f2e6d7033__ will have its 28-bit instance ID interpreted as the filename of the associated .mp3 file.
 
 
 License
