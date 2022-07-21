@@ -1,13 +1,20 @@
 audible-proximity
 =================
 
-Programatically play audio files on a portable computer, like the Raspberry Pi, based on its proximity to Bluetooth beacons.
+Programatically play audio files on a portable computer, like the Raspberry Pi, based on its proximity to Bluetooth beacons.  If using a Pi, our [Prepare a headless Raspberry Pi from scratch](https://reelyactive.github.io/diy/pi-prep/) is the ideal starting point. 
 
 
 Installation
 ------------
 
 Clone this repository, and from its root folder, run `npm install` to install all dependencies.
+
+If using a Pi, we recommend installing as follows:
+- `mkdir ~/reelyActive`
+- `cd ~/reelyActive`
+- `git clone https://github.com/reelyactive/audible-proximity.git`
+- `cd audible-proximity`
+- `npm install`
 
 
 Quick Start
@@ -30,6 +37,10 @@ Audio Files
 By default, audio files are expected to be found in the data/audio subfolder of this repository and have the form __xxxxxxx.mp3__ where each 'x' is a hexadecimal character (0-9 or a-f), for example 0123abc.mp3.
 
 A Bluetooth beacon transmitting an [InteroperaBLE Identifier](https://reelyactive.github.io/interoperable-identifier/) with the entity UUID __496f4944-434f-4445-b73e-2e2f2e6d7033__ will have its 28-bit instance ID interpreted as the filename of the associated .mp3 file.
+
+An audio file is included to facilitate out-of-the-box testing (data/audio/0000000.mp3).  To trigger this audio file, configure a Bluetooth beacon (or a beacon simulator app for mobile devices) as Eddystone-UID with the following parameters:
+- Entity ID: 496f49442e2f2e6d7033
+- Instance ID: 000000000000
 
 
 Debug Mode
