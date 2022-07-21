@@ -10,11 +10,13 @@ Installation
 Clone this repository, and from its root folder, run `npm install` to install all dependencies.
 
 If using a Pi, we recommend installing as follows:
-- `mkdir ~/reelyActive`
-- `cd ~/reelyActive`
-- `git clone https://github.com/reelyactive/audible-proximity.git`
-- `cd audible-proximity`
-- `npm install`
+```
+mkdir ~/reelyActive
+cd ~/reelyActive
+git clone https://github.com/reelyactive/audible-proximity.git
+cd audible-proximity
+npm install
+```
 
 
 Quick Start
@@ -39,8 +41,8 @@ By default, audio files are expected to be found in the data/audio subfolder of 
 A Bluetooth beacon transmitting an [InteroperaBLE Identifier](https://reelyactive.github.io/interoperable-identifier/) with the entity UUID __496f4944-434f-4445-b73e-2e2f2e6d7033__ will have its 28-bit instance ID interpreted as the filename of the associated .mp3 file.
 
 An audio file is included to facilitate out-of-the-box testing (data/audio/0000000.mp3).  To trigger this audio file, configure a Bluetooth beacon (or a beacon simulator app for mobile devices) as Eddystone-UID with the following parameters:
-- Entity ID: 496f49442e2f2e6d7033
-- Instance ID: 000000000000
+- _Namespace ID:_ 496f49442e2f2e6d7033
+- _Instance ID:_ 000000000000
 
 
 Debug Mode
